@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="conteudo">
+        <form>
+
+            <div class="topo">
+            <h1>Insira os valores que pretende calcular</h1>
+            Insira o 1º valor: <input type="text" id="valor1">
+            Insira o 2º valor: <input type="text" id="valor2">
+            <h1>Qual o operador?</h1>
+            </div>
+            
+
+            <select id="operator">
+                <option value="adi">Adicionar</option>
+                <option value="sub">Subtrair</option>
+                <option value="div">Dividir</option>
+                <option value="mul">Multiplicar</option>
+            </select>
+
+            <button type="button" onclick="calc()">Calcular</button>
+
+        </form>
+        <div id="result" class="resultado"></div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
